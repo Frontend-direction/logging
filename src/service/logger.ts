@@ -1,4 +1,4 @@
-class Logger {
+export class Logger {
     log(str: string) {
         console.log('This is loggs', str);
     }
@@ -7,5 +7,3 @@ class Logger {
         console.error(err);
     }
 }
-
-export default Logger;
