@@ -6,4 +6,8 @@ export class Logger {
     logError(err: any) {
         console.error(err);
     }
+
+    get config() {
+        return { a: 1 }
+    }
 }
