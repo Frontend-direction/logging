@@ -1,7 +1,6 @@
-import { Logger } from '../index';
-
+import { GalileoLogger } from '../index';
 
 test('My Greeter', () => {
-    const myLogger = new Logger();
-    expect(myLogger.config).toEqual({a:1});
+  const myLogger = new GalileoLogger();
+  expect(myLogger.trackEvent).toBeDefined();
 });
