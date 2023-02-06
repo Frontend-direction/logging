@@ -4,7 +4,8 @@
         "es2021": true
     },
     "plugins": [
-        "security"
+        "security",
+        "import"
     ],
     "extends": [
         "eslint:recommended",
@@ -18,11 +19,11 @@
             "tabWidth": 4,
             "ignoreUrls": true,
             "ignoreRegExpLiterals": true,
-            "ignoreComments": true 
-        }],                                     
+            "ignoreComments": true
+        }],
         "quotes": ["warn", "single"],
-        "curly": ["error", "multi"],                                       
-        "brace-style": [ "error" ],                                 
+        "curly": ["error", "multi"],
+        "brace-style": [ "error" ],
         "prefer-const": ["error", {
             "destructuring": "any",
             "ignoreReadBeforeAssign": false
@@ -30,6 +31,15 @@
         "no-prototype-builtins": "off",
         "no-trailing-spaces": ["error", { "ignoreComments": true }],
         "no-const-assign": "error",
+        "no-multiple-empty-lines": "error",
+        "no-multi-spaces": "error",
+        "no-nested-ternary": "error",
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "import/newline-after-import": ["error", { "count": 1 }],
+        "import/no-duplicates": "error",
+        "linebreak-style": ["error", "unix"],
+        "class-methods-use-this": "warn",
+        "object-curly-spacing": ["error", "always"],
         "@typescript-eslint/no-unused-vars": ["error", {
             "vars": "all",
             "args": "after-used",

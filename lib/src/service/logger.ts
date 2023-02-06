@@ -1,4 +1,5 @@
-import {ICustomProperties, IEventTelemetry } from '@microsoft/applicationinsights-web';
+import { ICustomProperties,IEventTelemetry } from '@microsoft/applicationinsights-web';
+
 
 export class GalileoLogger {
   trackEvent(_event: IEventTelemetry, customProperties?:ICustomProperties) {
